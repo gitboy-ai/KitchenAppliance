@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CApplianceComponentCasing.cpp" />
+    <ClCompile Include="CApplianceComponentCooler.cpp" />
     <ClCompile Include="CApplianceComponentDoor.cpp" />
     <ClCompile Include="CApplianceComponentHeater.cpp" />
     <ClCompile Include="CApplianceComponentKeypad.cpp" />
@@ -150,10 +151,12 @@
     <ClCompile Include="CKitchenAppliance.cpp" />
     <ClCompile Include="CKitchenApplianceComponent.cpp" />
     <ClCompile Include="CKitchenApplianceMicrowave.cpp" />
+    <ClCompile Include="CKitchenApplianceRefrigerator.cpp" />
     <ClCompile Include="KitchenConsole.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplianceComponentCasing.h" />
+    <ClInclude Include="CApplianceComponentCooler.h" />
     <ClInclude Include="CApplianceComponentDoor.h" />
     <ClInclude Include="CApplianceComponentHeater.h" />
     <ClInclude Include="CApplianceComponentKeypad.h" />
@@ -164,6 +167,7 @@
     <ClInclude Include="CKitchenAppliance.h" />
     <ClInclude Include="CKitchenApplianceComponent.h" />
     <ClInclude Include="CKitchenApplianceMicrowave.h" />
+    <ClInclude Include="CKitchenApplianceRefrigerator.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

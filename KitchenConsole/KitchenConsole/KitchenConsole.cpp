@@ -3,12 +3,38 @@
 
 #include <iostream>
 #include "CKitchenApplianceMicrowave.h"
+#include "CKitchenApplianceRefrigerator.h"
 
 int main()
 {
-    CKitchenApplianceMicrowave l_objMicrowave;
-    l_objMicrowave.switchOn();
-    l_objMicrowave.process();
+    std::string l_appChoice;
+    while (true)
+    {
+        std::cout << "\nWhat appliance do you want to test?" << std::endl;
+        std::cout << "Microwave (M)\nRefrigerator (R)" << std::endl;
+        std::cin >> l_appChoice;
+        if ((l_appChoice == "M") || (l_appChoice == "m"))
+        {
+            //Run the microwave
+             CKitchenApplianceMicrowave l_objMicrowave;
+             l_objMicrowave.switchOn();
+             l_objMicrowave.process();
+         
+        }
+        else if ((l_appChoice == "R") || (l_appChoice == "r"))
+        {
+            //Run the refrigerator
+            CKitchenApplianceRefrigerator l_objRefrigerator;
+            l_objRefrigerator.switchOn();
+            l_objRefrigerator.process();
+       
+        }
+        else
+        {
+            std::cout << "Thank you for visiting aCreativeStoreName." << std::endl;
+            break;
+        }
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

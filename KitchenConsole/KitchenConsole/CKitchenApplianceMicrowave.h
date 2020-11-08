@@ -17,11 +17,11 @@ class CKitchenApplianceMicrowave: public CKitchenAppliance
 		int virtual process();
 
 	protected:
-		CApplianceComponentCasing m_objCasing;
-		CApplianceComponentDoor m_objDoor;
-		CApplianceComponentHeater m_objHeater;
-		CApplianceComponentTransformer m_objTransformer;
-		CApplianceComponentTurntable m_objTurntable;
-		CApplianceComponentTimer m_objTimer;
-		CApplianceComponentKeypad m_objKeypad;
+		CApplianceComponentCasing m_objMicrowaveCasing;
+		CApplianceComponentDoor m_objMicrowaveDoor;
+		CApplianceComponentHeater m_objMicrowaveHeater;
+		CApplianceComponentTransformer m_objMicrowaveTransformer;
+		CApplianceComponentTurntable m_objMicrowaveTurntable;
+		CApplianceComponentTimer m_objMicrowaveTimer;
+		CApplianceComponentKeypad m_objMicrowaveKeypad;
 };

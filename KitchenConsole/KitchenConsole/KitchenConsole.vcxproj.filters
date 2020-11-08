@@ -51,6 +51,12 @@
     <ClCompile Include="CKitchenApplianceMicrowave.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CKitchenApplianceRefrigerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CApplianceComponentCooler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplianceComponentCasing.h">
@@ -84,6 +90,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CKitchenApplianceMicrowave.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CKitchenApplianceRefrigerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CApplianceComponentCooler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

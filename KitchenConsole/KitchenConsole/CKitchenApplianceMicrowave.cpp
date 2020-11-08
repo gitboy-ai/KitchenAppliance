@@ -6,40 +6,40 @@ CKitchenApplianceMicrowave::CKitchenApplianceMicrowave()
 }
 int CKitchenApplianceMicrowave::switchOn() 
 {
-	m_objTransformer.process(110);
-	m_objTransformer.switchOn();
-	int l_outputVoltage = m_objTransformer.getOutputVoltage();
-	m_objHeater.switchOn(l_outputVoltage);
-	m_objTimer.switchOn(l_outputVoltage);
-	m_objKeypad.switchOn(l_outputVoltage);
-	m_objTurntable.switchOn(l_outputVoltage);
+	m_objMicrowaveTransformer.process(110);
+	m_objMicrowaveTransformer.switchOn();
+	int l_intOutputVoltage = m_objMicrowaveTransformer.getOutputVoltage();
+	m_objMicrowaveHeater.switchOn(l_intOutputVoltage);
+	m_objMicrowaveTimer.switchOn(l_intOutputVoltage);
+	m_objMicrowaveKeypad.switchOn(l_intOutputVoltage);
+	m_objMicrowaveTurntable.switchOn(l_intOutputVoltage);
 	return 0;
 }
 int CKitchenApplianceMicrowave::switchOff() 
 {
-	m_objTransformer.switchOff();
-	m_objHeater.switchOff();
-	m_objTimer.switchOff();
-	m_objKeypad.switchOff();
-	m_objTurntable.switchOff();
+	m_objMicrowaveTransformer.switchOff();
+	m_objMicrowaveHeater.switchOff();
+	m_objMicrowaveTimer.switchOff();
+	m_objMicrowaveKeypad.switchOff();
+	m_objMicrowaveTurntable.switchOff();
 	return 0;
 }
 int CKitchenApplianceMicrowave::process() 
 {
-	m_objDoor.doorOpen();
+	m_objMicrowaveDoor.doorOpen();
 	std::cout << "Pizza placed onto turntable" << std::endl;
-	m_objDoor.doorClose();
-	m_objKeypad.setLastOperation("TEMPERATURE");
+	m_objMicrowaveDoor.doorClose();
+	m_objMicrowaveKeypad.setLastOperation("TEMPERATURE");
 	std::cout << "What temperature do you want to heat the pizza?" << std::endl;
-	m_objKeypad.process();
-	int l_intTemp = m_objKeypad.getLastKeyPressed();
-	m_objHeater.setHeat(l_intTemp);
-	m_objKeypad.setLastOperation("TIMER");
+	m_objMicrowaveKeypad.process();
+	int l_intTemp = m_objMicrowaveKeypad.getLastKeyPressed();
+	m_objMicrowaveHeater.setHeat(l_intTemp);
+	m_objMicrowaveKeypad.setLastOperation("TIMER");
 	std::cout << "How long do you want to heat the pizza?" << std::endl;
-	m_objKeypad.process();
-	int l_intTime = m_objKeypad.getLastKeyPressed();
-	m_objTimer.setTimer(l_intTime);
-	m_objKeypad.setLastOperation("START");
+	m_objMicrowaveKeypad.process();
+	int l_intTime = m_objMicrowaveKeypad.getLastKeyPressed();
+	m_objMicrowaveTimer.setTimer(l_intTime);
+	m_objMicrowaveKeypad.setLastOperation("START");
 	std::cout << "Started" << std::endl;
 	//1 second in timer = 1 rotation in turntable
 	int l_intPassedRotations = 0;
@@ -47,8 +47,8 @@ int CKitchenApplianceMicrowave::process()
 	std::string l_strStopInput;
 	while ((l_intPassedRotations < l_intTime) && (l_boolStopHeating == false))
 	{
-		m_objTurntable.startStopRotating(true);
-		m_objTurntable.process();
+		m_objMicrowaveTurntable.startStopRotating(true);
+		m_objMicrowaveTurntable.process();
 		std::cout << l_intTime - (l_intPassedRotations + 1) << std::endl;
 		if ((l_intPassedRotations % 5) == 0)
 		{
@@ -63,10 +63,10 @@ int CKitchenApplianceMicrowave::process()
 		}
 		l_intPassedRotations++;
 	}
-	m_objTurntable.startStopRotating(false);
-	m_objDoor.doorOpen();
+	m_objMicrowaveTurntable.startStopRotating(false);
+	m_objMicrowaveDoor.doorOpen();
 	std::cout << "Stopped heating. Please take food out." << std::endl;
-	m_objDoor.doorClose();
+	m_objMicrowaveDoor.doorClose();
 	switchOff();
 	std::cout << "Microwave switched off." << std::endl;
 	return 0;
