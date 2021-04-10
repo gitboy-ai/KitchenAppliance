@@ -1,0 +1,21 @@
+﻿  CApplianceComponentCasing.cpp
+  CApplianceComponentCooler.cpp
+  CApplianceComponentDoor.cpp
+  CApplianceComponentHeater.cpp
+  CApplianceComponentKeypad.cpp
+  CApplianceComponentTimer.cpp
+  CApplianceComponentTransformer.cpp
+  CApplianceComponentTurntable.cpp
+  CApplianceComponentWithPower.cpp
+  CApplianceStore.cpp
+  CApplianceWarehouse.cpp
+  CKitchenAppliance.cpp
+  CKitchenApplianceComponent.cpp
+  CKitchenApplianceMicrowave.cpp
+  CKitchenApplianceRefrigerator.cpp
+  KitchenConsole.cpp
+  Node.cpp
+  Queue.cpp
+  templateExample.cpp
+  Generating Code...
+  KitchenConsole.vcxproj -> C:\Users\Yuvi\source\repos\KitchenConsole\Debug\KitchenConsole.exe
