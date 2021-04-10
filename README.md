@@ -1,2 +1,3 @@
 # KitchenAppliance
-A console simulation of 2 common kitchen appliances: a microwave & a refrigerator
+- Individual kitchen appliance objects with specific functions and properties
+- Stores and warehouses for appliances using Observer pattern
