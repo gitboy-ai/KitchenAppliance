@@ -16,9 +16,6 @@
     <Filter Include="Source Files\Appliances">
       <UniqueIdentifier>{52c0912e-26b4-4ed1-8c87-1adb538a1d30}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Archived">
-      <UniqueIdentifier>{d92af1eb-1c43-497a-ac58-fe52b40f6edb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Store/Warehouse">
       <UniqueIdentifier>{b41ea641-5a16-49d7-8848-6d65cd70c7dc}</UniqueIdentifier>
     </Filter>
@@ -33,9 +30,6 @@
     </Filter>
     <Filter Include="Source Files\Appliances\Components">
       <UniqueIdentifier>{a759d02f-3d6d-46c1-94a7-7f4cefb72e7e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\Archived">
-      <UniqueIdentifier>{8b1c1aae-7fdd-4949-ae5c-51b938f69201}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -80,12 +74,6 @@
     </ClCompile>
     <ClCompile Include="CKitchenAppliance.cpp">
       <Filter>Source Files\Appliances</Filter>
-    </ClCompile>
-    <ClCompile Include="Node.cpp">
-      <Filter>Source Files\Archived</Filter>
-    </ClCompile>
-    <ClCompile Include="templateExample.cpp">
-      <Filter>Source Files\Archived</Filter>
     </ClCompile>
     <ClCompile Include="CApplianceStore.cpp">
       <Filter>Source Files\Store/Warehouse</Filter>
@@ -143,10 +131,16 @@
     <ClInclude Include="CKitchenApplianceMicrowave.h">
       <Filter>Header Files\Appliances</Filter>
     </ClInclude>
-    <ClInclude Include="Node.h">
-      <Filter>Header Files\Archived</Filter>
-    </ClInclude>
     <ClInclude Include="Queue.h">
+      <Filter>Header Files\Store/Warehouse</Filter>
+    </ClInclude>
+    <ClInclude Include="IObservable.h">
+      <Filter>Header Files\Store/Warehouse</Filter>
+    </ClInclude>
+    <ClInclude Include="IObserver.h">
+      <Filter>Header Files\Store/Warehouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.h">
       <Filter>Header Files\Store/Warehouse</Filter>
     </ClInclude>
   </ItemGroup>

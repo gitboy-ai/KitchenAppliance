@@ -8,9 +8,9 @@
 class CKitchenApplianceRefrigerator: public CKitchenAppliance
 {
 	public:
-		int virtual switchOn();
-		int virtual switchOff();
-		int virtual process();
+		int switchOn();
+		int switchOff();
+		int process();
 		CKitchenApplianceRefrigerator() { imNULL = false; price = 0.00; };
 		CKitchenApplianceRefrigerator(std::string, std::string, std::string, double);
 		CKitchenApplianceRefrigerator(CKitchenApplianceRefrigerator&);

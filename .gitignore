@@ -1,0 +1,11 @@
+*
+!*.gitignore
+!README.md
+!*.cpp
+!*.h
+!*.exe
+!*/
+*.filters
+*.vcxproj
+*.db
+*.suo

@@ -1,3 +1,3 @@
 #include "CKitchenAppliance.h"
 
-int CKitchenAppliance::lastId = 0;
+int CKitchenAppliance::lastId(0);

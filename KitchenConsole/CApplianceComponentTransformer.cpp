@@ -10,7 +10,7 @@ int CApplianceComponentTransformer::process(int input)
 	m_intOutputV = m_intInputV / 11;
 	return m_intOutputV;
 }
-int CApplianceComponentTransformer::process() //not in use
+int CApplianceComponentTransformer::process() // not in use
 {
 	return 0;
 }

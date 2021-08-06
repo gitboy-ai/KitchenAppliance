@@ -2,7 +2,7 @@
 #include "CKitchenApplianceMicrowave.h"
 #include "CKitchenApplianceRefrigerator.h"
 
-//Queue & Node for microwave
+// Queue & Node for microwave
 class microwaveNode
 {
 public:
@@ -23,7 +23,7 @@ private:
 	microwaveNode *front, *rear;
 };
 
-//Queue & Node for refrigerator
+// Queue & Node for refrigerator
 class refrigeratorNode
 {
 public:
@@ -41,5 +41,5 @@ public:
 	int length() { return n; };
 private:
 	int n;
-	refrigeratorNode *front, *rear;
+	refrigeratorNode* front, * rear;
 };
