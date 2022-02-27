@@ -10,7 +10,7 @@ CKitchenApplianceRefrigerator::CKitchenApplianceRefrigerator(std::string model, 
 	this->m_objRefrigeratorCasing.setColor(color);
 }
 
-CKitchenApplianceRefrigerator::CKitchenApplianceRefrigerator(CKitchenApplianceRefrigerator& obj) : imNULL(false)
+CKitchenApplianceRefrigerator::CKitchenApplianceRefrigerator(const CKitchenApplianceRefrigerator& obj) : imNULL(false)
 {
 	this->m_strAllItems = obj.m_strAllItems;
 	this->m_objRefrigeratorCasing = obj.m_objRefrigeratorCasing;
@@ -133,6 +133,28 @@ int CKitchenApplianceRefrigerator::process()
 }
 
 CKitchenApplianceRefrigerator& CKitchenApplianceRefrigerator::operator=(CKitchenApplianceRefrigerator& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_strAllItems = obj.m_strAllItems;
+		this->m_objRefrigeratorCasing = obj.m_objRefrigeratorCasing;
+		this->m_objRefrigeratorCooler = obj.m_objRefrigeratorCooler;
+		this->m_objRefrigeratorDoor = obj.m_objRefrigeratorDoor;
+		this->m_objRefrigeratorTransformer = obj.m_objRefrigeratorTransformer;
+		this->price = obj.price;
+		this->make = obj.model;
+		this->model = obj.model;
+		this->id = obj.id;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
+CKitchenApplianceRefrigerator& CKitchenApplianceRefrigerator::operator=(const CKitchenApplianceRefrigerator& obj)
 {
 	if (!obj.isNULL())
 	{

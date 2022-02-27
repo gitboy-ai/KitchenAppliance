@@ -14,14 +14,16 @@ class CKitchenApplianceMicrowave: public CKitchenAppliance
 	public:
 		CKitchenApplianceMicrowave() { imNULL = false; price = 0.00; };
 		CKitchenApplianceMicrowave(std::string, std::string, std::string, double);
-		CKitchenApplianceMicrowave(CKitchenApplianceMicrowave&);
+		CKitchenApplianceMicrowave(const CKitchenApplianceMicrowave&);
 		int virtual switchOn();
 		int virtual switchOff();
 		int virtual process();
 		CKitchenApplianceMicrowave& operator = (CKitchenApplianceMicrowave&);
+		CKitchenApplianceMicrowave& operator = (const CKitchenApplianceMicrowave&);
 		bool operator != (CKitchenApplianceMicrowave&);
 		bool operator == (CKitchenApplianceMicrowave&);
 		inline bool isNULL() { return imNULL; };
+		inline bool isNULL() const { return imNULL; };
 		inline std::string getColor() { return m_objMicrowaveCasing.getColor(); };
 
 	protected:

@@ -44,6 +44,21 @@ CApplianceComponentTransformer& CApplianceComponentTransformer::operator=(CAppli
 	return *this;
 }
 
+CApplianceComponentTransformer& CApplianceComponentTransformer::operator=(const CApplianceComponentTransformer& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_intInputV = obj.m_intInputV;
+		this->m_intOutputV = obj.m_intOutputV;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentTransformer::operator!=(CApplianceComponentTransformer& obj)
 {
 	return !(this->operator==(obj));

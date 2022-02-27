@@ -30,6 +30,20 @@ CApplianceComponentCasing& CApplianceComponentCasing::operator=(CApplianceCompon
 	return *this;
 }
 
+CApplianceComponentCasing& CApplianceComponentCasing::operator=(const CApplianceComponentCasing& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->color = obj.color;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentCasing::operator!=(CApplianceComponentCasing& obj)
 {
 	return !(this->operator==(obj));

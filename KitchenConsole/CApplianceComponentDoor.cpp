@@ -37,6 +37,20 @@ CApplianceComponentDoor& CApplianceComponentDoor::operator=(CApplianceComponentD
 	return *this;
 }
 
+CApplianceComponentDoor& CApplianceComponentDoor::operator=(const CApplianceComponentDoor& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_boolDoorOpen = obj.m_boolDoorOpen;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentDoor::operator!=(CApplianceComponentDoor& obj)
 {
 	return !(this->operator==(obj));

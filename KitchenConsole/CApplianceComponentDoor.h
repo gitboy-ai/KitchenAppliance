@@ -10,6 +10,7 @@ class CApplianceComponentDoor: public CKitchenApplianceComponent
 		void doorOpen();
 		void doorClose();
 		CApplianceComponentDoor& operator = (CApplianceComponentDoor&);
+		CApplianceComponentDoor& operator = (const CApplianceComponentDoor&);
 		bool operator != (CApplianceComponentDoor&);
 		bool operator == (CApplianceComponentDoor&);
 

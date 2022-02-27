@@ -49,6 +49,21 @@ CApplianceComponentCooler& CApplianceComponentCooler::operator=(CApplianceCompon
 	return *this;
 }
 
+CApplianceComponentCooler& CApplianceComponentCooler::operator=(const CApplianceComponentCooler& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_intDeg = obj.m_intDeg;
+		this->m_intVoltage = obj.m_intVoltage;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentCooler::operator!=(CApplianceComponentCooler& obj)
 {
 	return !(this->operator==(obj));

@@ -54,6 +54,22 @@ CApplianceComponentTurntable& CApplianceComponentTurntable::operator=(CAppliance
 	return *this;
 }
 
+CApplianceComponentTurntable& CApplianceComponentTurntable::operator=(const CApplianceComponentTurntable& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_boolRotating = obj.m_boolRotating;
+		this->m_intDegTurn = obj.m_intDegTurn;
+		this->m_intVoltage = obj.m_intVoltage;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentTurntable::operator!=(CApplianceComponentTurntable& obj)
 {
 	return !(this->operator==(obj));

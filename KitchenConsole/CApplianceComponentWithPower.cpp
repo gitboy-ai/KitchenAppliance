@@ -30,6 +30,20 @@ CApplianceComponentWithPower& CApplianceComponentWithPower::operator=(CAppliance
     return *this;
 }
 
+CApplianceComponentWithPower& CApplianceComponentWithPower::operator=(const CApplianceComponentWithPower& obj)
+{
+    if (!obj.isNULL())
+    {
+        imNULL = false;
+        this->m_intVoltage = obj.m_intVoltage;
+    }
+    else
+    {
+        imNULL = true;
+    }
+    return *this;
+}
+
 bool CApplianceComponentWithPower::operator!=(CApplianceComponentWithPower& obj)
 {
     return !(this->operator==(obj));

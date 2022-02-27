@@ -12,6 +12,7 @@ class CApplianceComponentKeypad : public CApplianceComponentWithPower
         int switchOn(int inputVoltage);
         int switchOff();
         CApplianceComponentKeypad& operator = (CApplianceComponentKeypad&);
+        CApplianceComponentKeypad& operator = (const CApplianceComponentKeypad&);
         bool operator != (CApplianceComponentKeypad&);
         bool operator == (CApplianceComponentKeypad&);
 

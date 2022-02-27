@@ -12,8 +12,8 @@ class CKitchenAppliance
 		inline double getPrice() { return price; }
 
 	protected:
-		int id;
-		double price;
+		int id = 0;
+		double price = 0.00;
 		std::string make;
 		std::string model;
 		static int lastId;

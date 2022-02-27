@@ -4,8 +4,12 @@
 !*.cpp
 !*.h
 !*.exe
+<<<<<<< Updated upstream
 !*/
 *.filters
 *.vcxproj
 *.db
 *.suo
+=======
+!*/
+>>>>>>> Stashed changes

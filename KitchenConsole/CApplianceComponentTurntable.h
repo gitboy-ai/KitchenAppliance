@@ -11,6 +11,7 @@ class CApplianceComponentTurntable : public CApplianceComponentWithPower
 		int printDegrees(int degrees);
 		void startStopRotating(bool rotating);
 		CApplianceComponentTurntable& operator = (CApplianceComponentTurntable&);
+		CApplianceComponentTurntable& operator = (const CApplianceComponentTurntable&);
 		bool operator != (CApplianceComponentTurntable&);
 		bool operator == (CApplianceComponentTurntable&);
 

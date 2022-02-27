@@ -10,6 +10,7 @@ class CApplianceComponentHeater : public CApplianceComponentWithPower
 		int switchOn(int inputVoltage);
 		int switchOff();
 		CApplianceComponentHeater& operator = (CApplianceComponentHeater&);
+		CApplianceComponentHeater& operator = (const CApplianceComponentHeater&);
 		bool operator != (CApplianceComponentHeater&);
 		bool operator == (CApplianceComponentHeater&);
 

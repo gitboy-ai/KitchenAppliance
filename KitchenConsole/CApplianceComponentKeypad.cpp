@@ -68,6 +68,22 @@ CApplianceComponentKeypad& CApplianceComponentKeypad::operator=(CApplianceCompon
     return *this;
 }
 
+CApplianceComponentKeypad& CApplianceComponentKeypad::operator=(const CApplianceComponentKeypad& obj)
+{
+    if (!obj.isNULL())
+    {
+        imNULL = false;
+        this->m_intLastKeyPressed = obj.m_intLastKeyPressed;
+        this->m_intVoltage = obj.m_intVoltage;
+        this->m_strLastOperation = obj.m_strLastOperation;
+    }
+    else
+    {
+        imNULL = true;
+    }
+    return *this;
+}
+
 bool CApplianceComponentKeypad::operator!=(CApplianceComponentKeypad& obj)
 {
     return !(this->operator==(obj));

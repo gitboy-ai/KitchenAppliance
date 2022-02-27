@@ -47,6 +47,21 @@ CApplianceComponentTimer& CApplianceComponentTimer::operator=(CApplianceComponen
 	return *this;
 }
 
+CApplianceComponentTimer& CApplianceComponentTimer::operator=(const CApplianceComponentTimer& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_intTimer = obj.m_intTimer;
+		this->m_intVoltage = obj.m_intVoltage;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentTimer::operator!=(CApplianceComponentTimer& obj)
 {
 	return !(this->operator==(obj));

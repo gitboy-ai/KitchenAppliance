@@ -10,6 +10,7 @@ class CApplianceComponentCasing : public CKitchenApplianceComponent
 		inline std::string getColor() { return color; };
 		int virtual process();
 		CApplianceComponentCasing& operator = (CApplianceComponentCasing&);
+		CApplianceComponentCasing& operator = (const CApplianceComponentCasing&);
 		bool operator != (CApplianceComponentCasing&);
 		bool operator == (CApplianceComponentCasing&);
 

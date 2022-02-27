@@ -11,7 +11,7 @@ CKitchenApplianceMicrowave::CKitchenApplianceMicrowave(std::string model, std::s
 	this->m_objMicrowaveCasing.setColor(color);
 }
 
-CKitchenApplianceMicrowave::CKitchenApplianceMicrowave(CKitchenApplianceMicrowave& obj) : imNULL(false)
+CKitchenApplianceMicrowave::CKitchenApplianceMicrowave(const CKitchenApplianceMicrowave& obj) : imNULL(false)
 {
 	this->m_objMicrowaveCasing = obj.m_objMicrowaveCasing;
 	this->m_objMicrowaveDoor = obj.m_objMicrowaveDoor;
@@ -97,6 +97,30 @@ int CKitchenApplianceMicrowave::process()
 }
 
 CKitchenApplianceMicrowave& CKitchenApplianceMicrowave::operator=(CKitchenApplianceMicrowave& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_objMicrowaveCasing = obj.m_objMicrowaveCasing;
+		this->m_objMicrowaveDoor = obj.m_objMicrowaveDoor;
+		this->m_objMicrowaveHeater = obj.m_objMicrowaveHeater;
+		this->m_objMicrowaveTransformer = obj.m_objMicrowaveTransformer;
+		this->m_objMicrowaveTurntable = obj.m_objMicrowaveTurntable;
+		this->m_objMicrowaveTimer = obj.m_objMicrowaveTimer;
+		this->m_objMicrowaveKeypad = obj.m_objMicrowaveKeypad;
+		this->price = obj.price;
+		this->make = obj.model;
+		this->model = obj.model;
+		this->id = obj.id;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
+CKitchenApplianceMicrowave& CKitchenApplianceMicrowave::operator=(const CKitchenApplianceMicrowave& obj)
 {
 	if (!obj.isNULL())
 	{

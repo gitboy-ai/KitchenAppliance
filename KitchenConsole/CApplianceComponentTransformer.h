@@ -11,6 +11,7 @@ class CApplianceComponentTransformer : public CKitchenApplianceComponent
 		int switchOn();
 		int switchOff();
 		CApplianceComponentTransformer& operator = (CApplianceComponentTransformer&);
+		CApplianceComponentTransformer& operator = (const CApplianceComponentTransformer&);
 		bool operator != (CApplianceComponentTransformer&);
 		bool operator == (CApplianceComponentTransformer&);
 

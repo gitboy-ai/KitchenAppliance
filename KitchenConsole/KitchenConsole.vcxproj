@@ -155,7 +155,10 @@
     <ClCompile Include="CKitchenApplianceMicrowave.cpp" />
     <ClCompile Include="CKitchenApplianceRefrigerator.cpp" />
     <ClCompile Include="KitchenConsole.cpp" />
+<<<<<<< Updated upstream
     <ClCompile Include="Queue.cpp" />
+=======
+>>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApplianceComponentCasing.h" />
@@ -173,9 +176,12 @@
     <ClInclude Include="CKitchenApplianceComponent.h" />
     <ClInclude Include="CKitchenApplianceMicrowave.h" />
     <ClInclude Include="CKitchenApplianceRefrigerator.h" />
+<<<<<<< Updated upstream
     <ClInclude Include="IObserver.h" />
     <ClInclude Include="IObservable.h" />
     <ClInclude Include="Queue.h" />
+=======
+>>>>>>> Stashed changes
     <ClInclude Include="Structs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

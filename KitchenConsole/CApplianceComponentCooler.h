@@ -10,6 +10,7 @@ class CApplianceComponentCooler: public CApplianceComponentWithPower
 		int switchOn(int inputVoltage);
 		int switchOff();
 		CApplianceComponentCooler& operator = (CApplianceComponentCooler&);
+		CApplianceComponentCooler& operator = (const CApplianceComponentCooler&);
 		bool operator != (CApplianceComponentCooler&);
 		bool operator == (CApplianceComponentCooler&);
 

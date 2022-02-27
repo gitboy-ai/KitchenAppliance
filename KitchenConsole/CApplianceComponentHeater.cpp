@@ -43,6 +43,21 @@ CApplianceComponentHeater& CApplianceComponentHeater::operator=(CApplianceCompon
 	return *this;
 }
 
+CApplianceComponentHeater& CApplianceComponentHeater::operator=(const CApplianceComponentHeater& obj)
+{
+	if (!obj.isNULL())
+	{
+		imNULL = false;
+		this->m_intDegHeat = obj.m_intDegHeat;
+		this->m_intVoltage = obj.m_intVoltage;
+	}
+	else
+	{
+		imNULL = true;
+	}
+	return *this;
+}
+
 bool CApplianceComponentHeater::operator!=(CApplianceComponentHeater& obj)
 {
 	return !(this->operator==(obj));

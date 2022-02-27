@@ -11,6 +11,7 @@ class CApplianceComponentTimer: public CApplianceComponentWithPower
 		int switchOn(int inputVoltage);
 		int switchOff();
 		CApplianceComponentTimer& operator = (CApplianceComponentTimer&);
+		CApplianceComponentTimer& operator = (const CApplianceComponentTimer&);
 		bool operator != (CApplianceComponentTimer&);
 		bool operator == (CApplianceComponentTimer&);
 
