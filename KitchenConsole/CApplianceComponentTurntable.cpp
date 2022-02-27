@@ -2,7 +2,7 @@
 #include <iostream>
 #include <Windows.h>
 
-CApplianceComponentTurntable::CApplianceComponentTurntable() : m_boolRotating(false), m_intDegTurn(0)
+CApplianceComponentTurntable::CApplianceComponentTurntable() : m_boolRotating(false), m_intDegTurn(0)//, m_intNumTurns(0)
 {
 }
 int CApplianceComponentTurntable::process()

@@ -65,7 +65,7 @@ int CKitchenApplianceMicrowave::process()
 	m_objMicrowaveTimer.setTimer(l_intTime);
 	m_objMicrowaveKeypad.setLastOperation("START");
 	std::cout << "Started" << std::endl;
-	// 1 second in timer = 1 rotation in turntable
+	//1 second in timer = 1 rotation in turntable
 	int l_intPassedRotations = 0;
 	bool l_boolStopHeating = false;
 	std::string l_strStopInput;

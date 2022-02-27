@@ -11,23 +11,10 @@ struct order
 	int units = 0;
 };
 
-<<<<<<< Updated upstream
-struct microwaveShipment
-{
-	int units = 0;
-	CKitchenApplianceMicrowave** items = nullptr;
-};
-
-struct refrigeratorShipment
-{
-	int units = 0;
-	CKitchenApplianceRefrigerator** items = nullptr;
-=======
 template<class T> class Shipment
 {
 public:
 	Shipment() {};
 	int units;
 	T** items;
->>>>>>> Stashed changes
 };

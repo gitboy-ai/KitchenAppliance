@@ -128,19 +128,6 @@
     <ClInclude Include="CKitchenApplianceMicrowave.h">
       <Filter>Header Files\Appliances</Filter>
     </ClInclude>
-<<<<<<< Updated upstream
-    <ClInclude Include="Queue.h">
-=======
-    <ClInclude Include="Structs.h">
->>>>>>> Stashed changes
-      <Filter>Header Files\Store/Warehouse</Filter>
-    </ClInclude>
-    <ClInclude Include="IObservable.h">
-      <Filter>Header Files\Store/Warehouse</Filter>
-    </ClInclude>
-    <ClInclude Include="IObserver.h">
-      <Filter>Header Files\Store/Warehouse</Filter>
-    </ClInclude>
     <ClInclude Include="Structs.h">
       <Filter>Header Files\Store/Warehouse</Filter>
     </ClInclude>
